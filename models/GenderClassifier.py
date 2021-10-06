@@ -6,12 +6,12 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import numpy as np
 
-class genderClassifier():
+class GenderClassifier():
     
     def __init__(self, model):
         self.model = model
 
-    def ANNDefinition(self):
+    def ann_definition(self):
         #Defining ANN
         self.model = Sequential()
         self.model.add(Dense(4, input_shape=(8, 2), activation='relu'))
